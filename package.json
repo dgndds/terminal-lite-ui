@@ -11,7 +11,11 @@
     "build":"npm run build:esm && npm run build:cjs"
   },
   "author": "Muhammed Doğancan Yılmazoğlu",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgndds/terminal-lite-ui.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "@types/react": "^19.1.0",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
@@ -23,10 +27,23 @@
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3"
   },
+  "peerDependencies": {
+    "react": ">=16"
+  },
   "devDependencies": {
     "@eslint/compat": "^1.2.8",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.24.0",
     "globals": "^16.0.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "terminal",
+    "ui-component",
+    "customizable",
+    "typescript",
+    "portfolio",
+    "developer-tools",
+    "interactive-demos"
+  ]
 }
