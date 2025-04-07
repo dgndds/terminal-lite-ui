@@ -1,0 +1,32 @@
+{
+  "name": "terminal-lite",
+  "version": "0.0.1",
+  "description": "A customizable React component for creating terminal-like user interfaces. Includes features like window controls, dialog support, and dynamic content rendering. Perfect for portfolio projects, developer tools, or interactive demos",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build":"npm run build:esm && npm run build:cjs"
+  },
+  "author": "Muhammed Doğancan Yılmazoğlu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^19.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.8",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.24.0",
+    "globals": "^16.0.0"
+  }
+}
