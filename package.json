@@ -1,15 +1,21 @@
 {
   "name": "terminal-lite",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "A customizable React component for creating terminal-like user interfaces. Includes features like window controls, dialog support, and dynamic content rendering. Perfect for portfolio projects, developer tools, or interactive demos",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/cjs/index.d.ts"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build":"npm run build:esm && npm run build:cjs"
+    "build": "npm run build:esm && npm run build:cjs"
   },
   "author": "Muhammed Doğancan Yılmazoğlu",
   "repository": {
