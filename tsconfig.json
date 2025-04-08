@@ -1,25 +1,15 @@
 {
-  "include": ["src"],
-  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
-    "module": "ESNext",
-    "lib": ["dom", "ESNext"],
-    "importHelpers": true,
-    "declaration": true,
-    "declarationDir": "./dist/types",
-    "sourceMap": true,
-    "rootDir": "./src",
-    "outDir": "./dist/esm",
-    "emitDeclarationOnly": false,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "target": "ES5",
+    "lib": ["dom", "es6"],
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "declaration": true,
+    "declarationDir": "./dist/types",   // Type declarations
+    "outDir": "./dist",                  // Output directory for both ESM and CJS
+    "declarationMap": true,
+    "allowJs": true
+  },
+  "include": ["src/**/*"]
 }
